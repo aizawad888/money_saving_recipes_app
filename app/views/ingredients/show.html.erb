@@ -1,0 +1,4 @@
+<!-- app/views/ingredients/show.html.erb -->
+<h2><%= @ingredient.name %></h2>
+<p>平均価格: <%= @ingredient.average_price %>円</p>
+<p><%= link_to "この食材でレシピを検索", search_recipes_path(ingredient: @ingredient.name) %></p>

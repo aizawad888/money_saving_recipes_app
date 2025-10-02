@@ -1,0 +1,8 @@
+<h1>優等生食材一覧</h1>
+<ul>
+  <% @ingredients.each do |ing| %>
+    <li>
+      <%= link_to "#{ing.name} - #{ing.average_price}円", ingredient_path(ing) %>
+    </li>
+  <% end %>
+</ul>
